@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Какие данные использует Mathseed Video Factory, как они хранятся и как отозвать доступ к YouTube.">
+  <title>Конфиденциальность — Mathseed Video Factory</title>
+  <style>
+    :root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f6f7f3;color:#253329;font:17px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:#255f41;text-underline-offset:3px}a:focus-visible{outline:3px solid #6b8d5b;outline-offset:4px}header,main,footer{max-width:850px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid #dce2d8}header a{text-decoration:none}.brand{font-weight:700;letter-spacing:-.02em}nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}main{padding-top:44px;padding-bottom:54px}h1{font-size:clamp(30px,6vw,44px);line-height:1.15;letter-spacing:-.03em;margin:0 0 18px}h2{font-size:23px;line-height:1.3;margin:32px 0 12px}p{margin:0 0 18px}.date{font-size:14px;color:#63705f}.note{padding:20px;background:white;border-left:3px solid #6b8d5b}ul,ol{padding-left:24px}li{margin:10px 0}code{font-size:.85em;overflow-wrap:anywhere}footer{border-top:1px solid #dce2d8;color:#63705f;font-size:14px}footer p{margin:0 0 8px}@media(max-width:620px){header{align-items:flex-start;flex-direction:column}nav{gap:12px}}
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="./">Mathseed Video Factory</a><nav aria-label="Основная навигация"><a href="./">О приложении</a><a href="terms.html">Условия</a></nav></header>
+  <main>
+    <h1>Политика конфиденциальности</h1>
+    <p class="date">Версия от 19 октября 2026 года</p>
+    <p>Mathseed Video Factory — личный инструмент владельца канала <a href="https://www.youtube.com/channel/UCM4VfOygNAl9-sEtqOHVdUg">@mathseed</a>. Эта политика описывает подключение канала и работу с YouTube API Services.</p>
+
+    <h2>Какие данные обрабатываются</h2>
+    <ul>
+      <li><strong>Подключение:</strong> идентификатор, название и публичное имя канала; выданные Google токены доступа и обновления, разрешения и сроки действия доступа.</li>
+      <li><strong>Публикации:</strong> подготовленные видео, названия, описания, теги, параметры публикации, идентификаторы и ссылки на загруженные ролики, время и результат выполнения операций.</li>
+      <li><strong>Статистика:</strong> доступные для своих публикаций просмотры, отметки «Нравится», число комментариев, число отправок, средняя продолжительность и доля просмотра. Сохраняются значения и время их получения.</li>
+      <li><strong>Обслуживание:</strong> состояние заданий, диагностические события и безопасные сообщения об ошибках.</li>
+    </ul>
+    <p>Вход и согласие выполняются на стороне Google. Приложение не запрашивает и не сохраняет пароль Google.</p>
+
+    <h2>Зачем нужны разрешения Google</h2>
+    <ul>
+      <li><code>youtube.upload</code> — загрузка видео в выбранный канал.</li>
+      <li><code>youtube.readonly</code> — проверка канала и чтение сведений о своих публикациях.</li>
+      <li><code>yt-analytics.readonly</code> — получение доступной статистики канала по опубликованным видео.</li>
+      <li><code>youtube.force-ssl</code> — дополнительное разрешение текущего подключения, которое включает действия с комментариями и другими данными YouTube. Текущая версия не читает тексты комментариев YouTube и не отправляет ответы на них.</li>
+    </ul>
+    <p>Данные используются для работы подключения, публикации материалов владельца, просмотра результатов и устранения сбоев.</p>
+
+    <h2>Хранение и передача</h2>
+    <p>Данные системы хранятся на сервере владельца. Токены находятся в отдельном закрытом хранилище, доступном администратору и серверным процессам с соответствующими правами. Публичные информационные страницы не предоставляют доступ к этому хранилищу.</p>
+    <p>Google получает необходимые запросы авторизации, данные выбранного канала и загружаемые материалы. Условия обработки данных Google описаны в <a href="https://policies.google.com/privacy">политике конфиденциальности Google</a>.</p>
+    <p>В системе предусмотрены уведомления владельцу через Telegram: они могут содержать статус выпуска, ссылку на публикацию и описание сбоя. Подготовка собственных материалов может использовать внешние средства генерации текста, голоса и видео. YouTube-токены используются серверным модулем для обращения к Google; в публичные страницы они не включаются.</p>
+
+    <h2>Сроки хранения</h2>
+    <p>Токены сохраняются для последующей работы подключённого канала и обновления доступа. Тексты, записи о публикациях и снимки статистики сохраняются в реестре; автоматический срок удаления этих записей в текущей версии не задан.</p>
+    <p>Для завершённых опубликованных выпусков предусмотрена периодическая очистка тяжёлых медиафайлов после двух суток с последней публикации, если обработка выпуска завершена. Она не удаляет тексты, статистику и записи публикаций и не удаляет само видео с YouTube.</p>
+
+    <h2>Отзыв доступа и удаление</h2>
+    <ol>
+      <li>Чтобы остановить доступ приложения к аккаунту Google, откройте <a href="https://myaccount.google.com/connections">подключения Google</a>, выберите Mathseed Video Factory и удалите предоставленный доступ. Также доступна <a href="https://security.google.com/settings/security/permissions">страница разрешений Google</a>.</li>
+      <li>Чтобы запросить удаление сохранённых системой данных, обратитесь к владельцу через канал <a href="https://www.youtube.com/channel/UCM4VfOygNAl9-sEtqOHVdUg">@mathseed</a>. Укажите название приложения и канал, к которому относится запрос. Не публикуйте пароль, токены или коды авторизации.</li>
+      <li>Удаление локальных данных выполняется администратором. Отзыв доступа в Google сам по себе не удаляет уже сохранённые записи из этой системы: автоматическая процедура такого удаления пока не реализована.</li>
+    </ol>
+    <p>Удаление данных из Mathseed Video Factory не удаляет видео и другие данные, сохранённые самим YouTube. Управлять ими можно в <a href="https://studio.youtube.com/">YouTube Studio</a>.</p>
+
+    <h2>Эти информационные страницы</h2>
+    <p>На страницах нет форм сбора данных, рекламных трекеров, встроенных видеоплееров, аналитических cookies и внешних скриптов. При переходе по ссылке на Google, YouTube или другой сервис действуют правила соответствующего сайта.</p>
+
+    <h2>Связь с владельцем</h2>
+    <p>Владелец приложения — владелец канала <a href="https://www.youtube.com/channel/UCM4VfOygNAl9-sEtqOHVdUg">@mathseed</a>. Вопросы и обращения об обработке данных адресуются ему через этот канал.</p>
+  </main>
+  <footer><p><a href="./">О приложении</a> · <a href="terms.html">Условия использования</a></p><p>Mathseed Video Factory использует YouTube API Services.</p></footer>
+</body>
+</html>
